@@ -1,6 +1,6 @@
 const cfg = window.DBL_CONFIG || {};
 const $ = (s) => document.querySelector(s);
-const pages = ["home","play","skins","server","settings"];
+const pages = ["home","play","skins","server","community","settings"];
 let selectedVersion = "1.8.8";
 let allSkins = [];
 

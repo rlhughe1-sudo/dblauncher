@@ -17,6 +17,7 @@
       <button class="nav-item" data-page="skins"><span>▧</span> Skin library <b id="skin-count-nav">632</b></button>
       <div class="nav-label second">YOUR SERVER</div>
       <button class="nav-item" data-page="server"><span>◈</span> Server</button>
+      <button class="nav-item" data-page="community"><span>💬</span> Community</button>
       <div class="sidebar-bottom">
         <div class="profile"><div class="avatar">R</div><div><strong>RydenVR</strong><small>Launcher owner</small></div><span class="online-dot"></span></div>
         <button class="nav-item" data-page="settings"><span>⚙</span> Settings</button>
@@ -96,10 +97,30 @@
         <div class="settings-card"><label for="client188">Eaglercraft 1.8.8 client URL</label><input id="client188" type="url"><label for="client112">Minecraft 1.12.2 client URL</label><input id="client112" type="url" placeholder="Paste your 1.12.2 browser client URL"><label for="serverinput">DBSMP server address</label><input id="serverinput" type="text"><button class="primary-btn" id="save-settings">SAVE SETTINGS <span>✓</span></button><p class="settings-help">Settings are saved in this browser only. For GitHub Pages, you can also edit config.js in your repository.</p></div>
       </section>
 
+      <section class="page" id="page-community">
+        <div class="page-intro">
+          <div class="eyebrow">DBLAUNCHER SOCIAL</div>
+          <h1>Your <em>community.</em></h1>
+          <p>Sign in to join the DBSMP community.</p>
+        </div>
+        <div class="settings-card" id="chat-auth">
+          <h2>Welcome to DBLauncher</h2>
+          <label for="chat-email">Email</label>
+          <input id="chat-email" type="email" autocomplete="email" placeholder="Your email">
+          <label for="chat-password">Password</label>
+          <input id="chat-password" type="password" autocomplete="current-password" placeholder="Your password">
+          <button class="primary-btn" id="chat-login">LOG IN</button>
+          <button class="secondary-btn" id="chat-signup">CREATE ACCOUNT</button>
+          <p id="chat-status" aria-live="polite"></p>
+        </div>
+      </section>
       <footer class="footer"><span>DBLAUNCHER <b>•</b> BY RYDENVR</span><span>MADE FOR MINECRAFT LEGACY PLAYERS</span></footer>
     </main>
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="config.js"></script>
+  <script src="supabase-config.js"></script>
+  <script src="chat.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
